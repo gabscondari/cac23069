@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 5: CSS</title>
+    <!--debe estar siempre dentro de head-->
+    <link rel="stylesheet" href="../../assets/ccs/styles.css">
+    <!--css interna: se pone dentro de la etiqueta head-->
+    <!--todo lo que esriba aqui dentro es css no html-->
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet"> 
+    estos links son una forma de poner el style desde google fonts, tambien se puede usar el import-->
+
+    <style>
+        /*esto es un codigo css*/
+        /*selector universal*/
+        *{
+            /*usado para definir variables, estos valores prevalecen sobre los selectores de tipo*/
+            /*font-size: 16px;*/
+            color: rgb(0,0,0);
+            font-family: 'Ubuntu', sans-serif;
+        }
+        /*selector de tipo*/
+        h1{
+            /*para cambiar el tamaño de la letra se usa font size, el tamaño por defecto es de 16px*/
+            /*font-size: 1,5em;*/
+            color: blue;
+            font-weight: 300;
+        }
+        /*selector por id*/
+        #miParrafo{
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /*selector por clase*/
+        .miParrafoClase{
+            /*font-family: Verdana, Geneva, Tahoma, sans-serif; va a depender del sistema operativo*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Sou um div
+    </div>
+    <!--css inline, este tipo prevalece en el docuemtno por sobre todos los otros-->
+    <h1 style="color:red">CSS: unidad I</h1>
+    <h2>Fromas de incluir css</h2>
+    <p id="miParrafo">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, id velit! Necessitatibus ipsum aut fugit autem, praesentium quaerat iste esse, harum libero asperiores dolore at atque suscipit deserunt sit explicabo?
+    </p>
+    <p class="miParrafoClase">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dignissimos deserunt esse dolorem nesciunt possimus, odio ducimus incidunt? Tempora aperiam optio ea vero perferendis molestiae soluta iusto repudiandae distinctio nisi?
+    </p>
+    <h3 class="miParrafoClase">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos unde officiis, amet voluptate porro reiciendis accusamus dolore temporibus deleniti quae quaerat, quisquam quidem maiores, totam sequi cum eaque. Doloremque, illo.
+    </h3>
+    <a href="https://muebleriaslonghi.com.ar">
+        Link externo
+    </a>
+    </body>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/*quitar los margenes y el padding*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*ESPECIFICIDAD: !important>id>clase>tipo>universal*/
+
+/*selector universal*/
+*{
+    color:chocolate;
+}
+
+/*selector de tipo*/ 
+h1{
+    color:fuchsia;
+}
+
+/*clase*/
+.h1{
+    color: darkcyan !important;
+    font-size: 22px !important;
+}
+
+/*id*/
+#h1{
+    color:tomato;
+}
+
+/*MODELO DE CAJA*/
+.container{
+    width: 250px;
+    background-color: cadetblue;
+    /*border-color: black;
+    border: 1px solid;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    margin-right: 45px;*/
+
+    margin: 15px 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 5px;
+    border: 5px solid black;
+
+    /*box-sizing: content-box; /*el width y height no incluyen el margin , padding ni border*/
+    box-sizing: border-box;
+}
+
+.container-v2{
+    border: 1px solid red;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/*elementos en bloque tienen alto y ancho// elementos inline tienen margen */
+.container-v2 a{
+    margin: 10px;
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+}
+
+/*selector por atributos*/
+.container-v2 a[href="htpps://www.google.com.ar"]{
+    font-size: 30px;
+}
+
+/* ^= para los atributos que comienzan con...
+*= para elementos que contengan...
+=: para elementos que contengan algo exactamente igual a ...
+$= para elementos que terminen con...
+*/ 
+ul > li[id^="li"]{
+    background-color: blueviolet;
+    color: white;
+}

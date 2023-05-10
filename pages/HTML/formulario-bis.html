@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clase 4: Formularios</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <fieldset>
+                    <legend>
+                        <h1>Formulario 1</h1>
+                    </legend>
+                    <!--get: permite ver la info enviada en la misma URL-->
+                    <!--post: la URL encripta la info enviada-->
+                        <Form method="post" 
+                            enctype="multipart/form-data"
+                            action="/pages/HTML/html-semantico-bis.html"
+                            >
+                            <div>
+                                <label for="nombre">Nombres </label>
+                                <input name="nombre" 
+                                    id="nombre" 
+                                    type="text"
+                                    maxlength="25" 
+                                    required
+                                />
+                            </div> 
+                            <div>       
+                                <label for="apellido">Apellido </label>
+                                <input name="apellido" 
+                                    id="apellido" 
+                                    type="text"
+                                    maxlength="10" 
+                                    required
+                                />
+                            </div>    
+                            <div>
+                                <div>
+                                    <label>Fecha de nacimiento</label>
+                                    <input type="date">    
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <label>Comisión </label>
+                                    <input type="number" 
+                                        required
+                                        name="comision"
+                                        id="comision"
+                                />
+                                </div>
+                            </div>
+                            <div>
+                                <label for="nacionalidad">Nacionalidad </label>
+                                <select name="nacionalidad">
+                                    <option></option>
+                                    <option value="ARG">Arg</option>
+                                    <option value="BRA">Br</option>
+                                    <option value="CHI">Chi</option>
+                                    <option value="others">Otras</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="">Habla ingles?</label>
+                                <input type="radio" 
+                                    name="hablaIngles"
+                                    valu="SI">SI
+                                <input type="radio" 
+                                    name="hablaIngles"
+                                    value="NO">NO
+                            </div>  
+                            <div>
+                                <label for="">Qué otros idiomas habla? </label>
+                                <input type="checkbox" 
+                                    name="portugues"
+                                    valu="portugues">Portugues
+                                <input type="checkbox" 
+                                    name="italiano"
+                                    value="italiano">Italiano
+                                <input type="checkbox" 
+                                    name="chino"
+                                    value="chino">Chino 
+                                <input type="checkbox" 
+                                    name="ruso"
+                                    value="ruso">Ruso 
+                            </div>
+                            <div>
+                                <label for="">Tiene mascotas en casa?</label>
+                                <div>
+                                    <input type="checkbox" 
+                                    name="tienemascotas"
+                                    valu="perros">Tengo perros
+                                <input type="checkbox" 
+                                    name="tienemascotas"
+                                    value="gatos">Tengo gatos
+                                <input type="checkbox" 
+                                    name="tienemascotas"
+                                    value="otros">Otros
+                                </div>
+                            </div>
+                            <div>
+                                <label>Avatar</label>
+                                <div>
+                                    <input type="file" name="avatar">
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <button>
+                                    Enviar
+                                </button>
+                            </div>
+                        </Form>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>
+                        <h1>Formulario 2</h1>
+                    </legend>
+                    <form>
+                        <!--puedo tener 2 o mas formularios en la misma paginas separados por un section cada uno-->
+                        <!--no puedo tener un formulario dentro de otro formulario-->
+                        <input name="claveUnica" 
+                            id="id"
+                            type="hidden"
+                            value="1234"
+                            >
+                        <div>
+                            <!--para enviar info al backend sin que que se vea-->
+                            <label for="search">Buscar</label>
+                            <input name="seach" 
+                                id="seach"
+                                type="search">
+                                <button>
+                                    Buscar
+                                </button>
+                        </div>
+                    </form>
+                </fieldset>
+            </section>
+        </main>
+    </body>
+    </html>

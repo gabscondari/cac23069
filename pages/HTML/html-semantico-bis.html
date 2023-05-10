@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clase 3 - HTML</title>
+    </head>
+    <body>
+        <!--Para guardar: ctrl +s-->
+        <!--Para levantar el archivo: click derecho sobre archivo, open with five server-->
+        <header>
+            <h1>Clase 3: HTML semántico y formularios</h1>
+        </header>
+        <!--menu de navegacion-->
+        <nav>
+            <!--listas no ordenadas-->
+            <ul>
+                <li>
+                    <a href="index.html" >HOME</a>
+                </li>
+            </ul>
+        </nav>
+            <!--Contenido principal-->
+            <h2>Mundial de Qatar</h2>
+            <section>
+                <h3>Grupos</h3>
+                <!--Parrafo: <p> -->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione neque inventore aliquid, voluptas minus error veniam quibusdam eveniet odio ullam, fugit ea quam quidem repudiandae alias impedit magni non commodi.</p>
+            </section>
+            <section>
+                <h3>Fechas</h3>
+                <!--Lista ordenada-->
+                <o1>    
+                    <l1>
+                        Fecha 1
+                    </l1>
+                    <l1>
+                        Fecha 2
+                    </l1>
+                </o1>    
+            </section>
+            <section>
+                <h3>Equipo</h3>
+                <!--W3school: tiene todas las referencias de etiquetas de HTML-->
+                <!--Tablas-->
+                <table border="1" width="100%">
+                    <thead>
+                        <tr align="center">
+                            <th>
+                                Selección 
+                            </th>
+                            <th>
+                                DT
+                            </th>
+                            <th>
+                                Capitan
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr align="left">
+                            <td>
+                                Argentina 
+                            </td>
+                            <td align="center">
+                                Lionel Scaloni
+                            </td>
+                            <td>
+                                Lionel Messi
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>
+                                Brasil 
+                            </td>
+                            <td>
+                                Tite
+                            </td>
+                            <td>
+                                Neymar
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" align="center">
+                                Codo a codo 2023
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        <main>
+        </main>
+        <!--aside: fuera del main, usado para info adicional, por ejemplo publicidad-->
+        <aside>
+            <!--Una caja de anuncios. Un div es un contenedor de algo-->
+            <div>
+                <h5> Viajes a Japón </h5>
+                <!--url absoluta-->
+                <img  width="25%"
+                    src="https://img.freepik.com/fotos-gratis/flores-de-cerejeira-na-primavera-pagode-chureito-e-montanha-fuji-ao-por-do-sol-no-japao_335224-215.jpg?w=2000"/>
+                <p> Las mejores vacaciones de tu vida </p>
+            </div>
+            <div>
+                <h5> Viajes a Rusia </h5>
+                <!--url relativa-->
+                <img  width="25%"
+                    src="./img/rusia_1280x720.jpg"/>
+                <p> Las otras mejores vacaciones de tu vida </p>
+            </div>
+        </aside>
+        <!--al final del documento va generalemte el footege-->
+        <footer>
+            <!--aca va info institucional, mapa del sitio-->
+            <p>Contacto</p>
+                <form>
+                    <label> Deje sus comentarios      </label>
+                    <br> 
+                    <textarea cols="30" rows="5"></textarea> 
+                    <label> Email: </label>
+                    <input type="text">
+                    <br>
+                    <button>
+                        Enviar
+                    </button>
+                </form>
+                <p>Mapa del sitio</p>
+                <d1> 
+                    <dt>HOME</dt>
+                    <dt>Pizzas</dt>
+                    <dt>Html semantico</dt>
+                </d1>
+            </footer>
+        </footer>
+
+
+
+    </body>
+    </html>

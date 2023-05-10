@@ -1,0 +1,65 @@
+*{
+    color: cadetblue;
+} 
+
+/*clase*/
+.parrafo{
+    color:blueviolet;
+    font-size: 14px;
+}
+
+/* . clase es para muchos
+    #id unico elemento
+    etiqueta: a todos los p,h */
+
+/*ID*/
+#parrafoId{
+    color: aqua;
+    font-size: 19px !important;
+}
+
+/* orden de especificidad: !important>inline>id>clase>tipo*/
+
+/* cuando hay dos cosas en el mismo nivel de especificidad, prevalece el que se carga al ultimo*/
+
+/*selector de tipo*/
+ p{
+    color:blue !important;
+    font-size: 12px;
+}
+
+/*definiendo una clase*/
+/*clase>selector de tipo, en cuanto a especificidad*/
+#text-content > p#pepe{ 
+    color: black !important;
+}
+#text-content > p {
+    color: brown !important;
+}
+
+/* selector avanzador */
+/*selector hijo > */
+#listado > li > a{
+    color: blue;
+}
+
+/*selector hermanos adyacentes( el que viene justo despues) + */
+h1+p{
+    font-size: 25px;
+}
+
+/*para que los p adentro del div tengan otro tamano de letras*/
+#p1 {
+    font-size: 35px;
+}
+
+/*selector hermano general*/
+div#hermanosGenerales ~p {
+    color: blueviolet;
+    font-size: 18px;
+}
+
+/*pseudo clases*/
+/*first child: toma el primer elemento*/
+/*last child: toma el ultimo elemento*/
+/*etiqueta:first/last*/
